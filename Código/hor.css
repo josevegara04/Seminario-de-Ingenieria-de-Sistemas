@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: #75dddd;
+}
+
+header{
+    display: flex;
+}
+
+.izquierda{
+    width: 72%;
+}
+
+img{
+    width: 100px;
+}
+
+.derecha a{
+    color: #ddfaf8;
+    text-decoration: none;
+    padding: 5px 25px;
+    margin: 0 5px;
+    background-color: #345351;
+    border-radius: 20px;
+    line-height: 100px;
+}
+
+.derecha a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.abajo{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#horario{
+    width: 100%;
+    border: 1px solid #345351;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+#horario tr{
+    background-color: #ddfaf8;
+    border: 1px solid #345351;
+}
+
+#horario th, #horario td{
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+    color: #345351;
+}
+
+#horario thead th{
+    text-transform: uppercase;
+    background-color: #345351;
+    color: #ddfaf8;
+}
+
+#horario tbody tr:hover{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+#horario tbody td:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px){
+    #horario{
+        border: 0px;
+    }
+
+    #horario thead{
+        display: none;
+    }
+
+    #table tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #345351;
+        display: block;
+    }
+
+    #horario th, #horario td{
+        font-size: 12px;
+    }
+
+    #horario td{
+        display: block;
+        border-bottom: 1px solid #345351;
+        text-align: right;
+    }
+
+    #horario td:last-child{
+        border-bottom: 0px;
+    }
+
+    #horario td::before{
+        content: attr(data-datos);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+}
+
+input{
+    border: none;
+    background-color: #345351;
+    border-radius: 20px;
+    color: #ddfaf8;
+    width: 150px;
+    font-size: 16px;
+}
+
+input:hover{
+    text-decoration: underline;
+}
+
+
+
